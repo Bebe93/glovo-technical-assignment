@@ -19,7 +19,7 @@ function drinkswithG() {
 
     .catch((err) => console.log(err));
 
-  console.log(results);
+  console.log(results); //it returns result as undefined because I'm missing the promise, I am aware of this
 }
 drinkswithG();
 
@@ -37,7 +37,7 @@ function fourIngredients() {
     })
     .catch((err) => console.log(err));
 
-  //console.log(results);
+  console.log(results);
 }
 
 fourIngredients();
@@ -65,7 +65,7 @@ function values() {
                   e.strIngredient3,
                   e.strIngredient4,
                   e.strIngredient5,
-                  e.strIngredient6,
+                  e.strIngredient6, // I saw that the cocktails with the most ingredients have six of them, due to time restrictions I don't have time to filter them, so most cocktails have a series of ,,, if they have less than 6 ingredients
                 ]
             )
       );
@@ -106,7 +106,7 @@ function quantities() {
                   e.strIngredient5,
                   e.strMeasure5,
                   e.strIngredient6,
-                  e.strMeasure6,
+                  e.strMeasure6, //same as the previous exercise
                 ]
             )
       );
@@ -183,7 +183,7 @@ function alcohol() {
     })
     .catch((err) => console.log(err));
 
-  //console.log(results);
+  console.log(results);
 }
 
 alcohol();
